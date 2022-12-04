@@ -1,0 +1,25 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "day1": "nodemon day1.js",
+    "day2": "nodemon day2.js",
+    "day3": "nodemon day3.js",
+    "day4": "nodemon day4.js",
+    "day5": "nodemon day5.js",
+    "day6": "nodemon day6.js",
+    "day7": "nodemon day7.js",
+    "day8": "nodemon day8.js",
+    "day9": "nodemon day9.js",
+    "day10": "nodemon day10.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

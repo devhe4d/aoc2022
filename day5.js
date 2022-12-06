@@ -519,16 +519,12 @@ move 2 from 7 to 1
 move 3 from 8 to 3
 move 6 from 8 to 5`;
 
-// turn instructions into array
 let instructions = rawInstractions.split('\n');
 
 function solveProblem(stacks, instructions) {
-  // Create an array of arrays to represent the stacks of crates
   const crateStacks = stacks.map((stack) => stack.split(''));
 
-  // Iterate through the instructions and move the crates between stacks
   instructions.forEach((instruction) => {
-    // Parse the instruction to get the number of crates, the source stack, and the destination stack
     const [, numCrates, sourceStack, destStack] = instruction.match(
       /move (\d+) from (\d+) to (\d+)/
     );
@@ -543,7 +539,6 @@ function solveProblem(stacks, instructions) {
     crateStacks[destStack - 1].push(...cratesToMove);
   });
 
-  // Return the top crate of each stack as the solution
   return crateStacks.map((stack) => stack[stack.length - 1]).join('');
 }
 
